@@ -29,5 +29,6 @@ jobs:
 
       - uses: ncipollo/release-action@v1
         with:
+          allowUpdates: true
           artifacts: "out/*.pdf,out/*.fountain"
           token: ${{ secrets.GITHUB_TOKEN }}
