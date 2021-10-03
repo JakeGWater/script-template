@@ -27,10 +27,7 @@ jobs:
           npm install
           npm start
 
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - uses: ncipollo/release-action@v1
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          prerelease: true
-          files: |
-            out/*.pdf
-            out/*.fountain
+          artifacts: "out/*.pdf,out/*.fountain"
+          token: ${{ secrets.GITHUB_TOKEN }}
