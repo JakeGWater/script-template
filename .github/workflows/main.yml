@@ -4,9 +4,6 @@ name: Create Draft as PDF
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ main ]
   create:
 
   # Allows you to run this workflow manually from the Actions tab
@@ -34,7 +31,6 @@ jobs:
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: true
-          automatic_release_tag: "latest"
           files: |
             out/*.pdf
             out/*.fountain
