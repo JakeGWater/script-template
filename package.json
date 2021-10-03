@@ -1,0 +1,23 @@
+{
+  "name": "script-template",
+  "version": "1.0.0",
+  "description": "## Install",
+  "main": "index.js",
+  "scripts": {
+    "start": "afterwriting --overwrite --source out/script.fountain --pdf out/script.pdf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JakeGWater/script-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JakeGWater/script-template/issues"
+  },
+  "homepage": "https://github.com/JakeGWater/script-template#readme",
+  "dependencies": {
+    "afterwriting": "^1.17.3"
+  }
+}
